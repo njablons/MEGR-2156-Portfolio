@@ -1,25 +1,14 @@
-# MEGR 2157 – Design Portfolio
+# Nathan Jablonski
 
-![MEGR 2156-7 Title](MEGR2156title.png)
+![Header Image](IMG_3462.jpeg)
 
-This site is the working record of your engineering design decisions across MEGR 2157. Every entry follows the Analyze, Decide, Communicate structure in accordance with standard engineering documentation practice, so a reader can see not just what you built, but how and why you built it that way. Engineering documentation is a skill developed through deliberate practice. Each assignment is an opportunity to improve the precision, clarity, and professional quality of how you record and defend your work. As you progress through the semester your engineering capability will grow alongside your documentation — this portfolio is the record of that journey.
+Welcome to my portfolio! I am an engineering student at UNC Charlotte studying design and manufacturing processes. This site showcases my hands-on design projects, technical skills, and engineering documentation.
 
-> **Engineering is the art of making decisions you can defend.**
+---
 
-## The three pillars
+## Quick Navigation
+* [About Me](aboutme/index.md) - Learn about my background, experience, and interests.
+* [Portfolio Overview](portfolio-overview.md) - View my technical projects and laboratory work.
 
-Most assignment pages are organized around:
-
-- **Analyze** — the calculations, models, and data behind your design.
-- **Decide** — the choice you made and, critically, the reasoning for it.
-- **Communicate** — the drawings, report, and presentation you'd hand to a client.
-
-Use the navigation on the left to move between assignments.
-
-## Semester arc
-
-- **Act I (Weeks 1–7):** Building vocabulary through the bracket sequence.
-- **Act II (Weeks 8–11):** Surveying the machine-element landscape and formally comparing options.
-- **Act III (Weeks 12–15):** Building the complete lead screw translating system.
-
-By A11, every design decision you defend should trace back to something you analyzed and communicated earlier in this site.
+## Overview
+This site serves as a record of my design decisions across various manufacturing technologies, including FDM 3D printing, laser cutting, and SLA resin printing. Each entry documents the process, geometry choices, and lessons learned.
