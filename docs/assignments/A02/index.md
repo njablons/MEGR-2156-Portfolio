@@ -156,7 +156,6 @@ A 5-panel symmetrical planar configuration was selected because it distributes e
 ## Communicate
 
 ### CAD Files & Downloads
-*Note: Download links are provided below to satisfy the rubric requirement and avoid the 15% grade deduction.*
 
 - [Download Complete CAD Assembly (.STEP File)](./truss_assembly.step)
 - [Download Connecting Pin Model (.STEP File)](./pin_model.step)
