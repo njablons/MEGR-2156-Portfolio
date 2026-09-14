@@ -109,10 +109,3 @@ The maximum stress is significantly below the yield strength (40 ksi), confirmin
 ## CAD File Download
 
 * [Download CAD Part File (.prt / .step)](your_cad_download_link_here)
-* **Actual Time Spent:** Total time from start to finish was **5.5 hours** across two days.
-
----
-
-## CAD File Download
-
-* [Download CAD Part File (.prt / .step)](your_cad_download_link_here)
