@@ -117,4 +117,4 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 ### Lessons Learned & Challenges
 1. **Deflection Governs Design**: In both features, the thickness required for stiffness (h<sub>1</sub> = 10.70 mm, h<sub>2</sub> = 14.19 mm) was significantly larger than the strength requirement (8.87 mm and 9.49 mm). This proved that stiffness constraints (δ ≤ 0.30 mm) drive geometry for cantilever mounts much more than yield failure.
 2. **Creo Parametric Relations**: Linking sketch dimensions directly to parameters (`b1`, `h1`, `b2`, `h2`) ensured that any future design changes automatically regenerate the 3D model without breaking features.
-3. **Simple vs. Complex Aesthetics**: While raw blocky geometry satisfies structural math, adding interior fillets or side gussets significantly improves stress distribution and visual appearance.
+3. **Simple vs. Complex Aesthetics**: While raw blocky geometry satisfies structural math, adding side gussets significantly improves stress distribution and visual appearance.
