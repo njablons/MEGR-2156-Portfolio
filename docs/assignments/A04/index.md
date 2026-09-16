@@ -25,7 +25,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Free Body Diagram (FBD) & Calculations
 
-![Feature 1 Hand Calculations, Free Body Diagram, and Moment Derivation](IMG_4085.jpeg)
+![Feature 1 Hand Calculations, Free Body Diagram, and Moment Derivation](../../IMG_4085.jpeg)
 
 *Figure 1: Hand calculations, FBD, and moment derivation for Feature 1 (Motor Attachment Plate).*
 
@@ -53,7 +53,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Free Body Diagram (FBD) & Calculations
 
-![Feature 2 Hand Calculations, Free Body Diagram, and Stress Derivation](IMG_4086.jpeg)
+![Feature 2 Hand Calculations, Free Body Diagram, and Stress Derivation](../../IMG_4086.jpeg)
 
 *Figure 2: Hand calculations, FBD, and moment derivation for Feature 2 (Wall Mount Plate).*
 
@@ -73,7 +73,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## Sketch (Isometric View)
 
-![Hand-drawn Isometric Sketch of the Motor Mount Assembly](IMG_4087.jpeg)
+![Hand-drawn Isometric Sketch of the Motor Mount Assembly](../../IMG_4087.jpeg)
 
 *Figure 3: Hand-drawn isometric sketch detailing dimensions and feature geometry.*
 
@@ -81,7 +81,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## CAD Model (Parametric)
 
-![3D Parametric CAD Model rendered in PTC Creo Parametric](Screenshot%202026-09-16%20141452.png)
+![3D Parametric CAD Model rendered in PTC Creo Parametric](../../Screenshot%202026-09-16%20141452.png)
 
 *Figure 4: Parametric 3D CAD model in PTC Creo showing the motor clearance hole and wall mounting holes.*
 
@@ -92,15 +92,15 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## CAD File Downloads
 
-* [Download PTC Creo Part File (.prt.1)](sodesigna4.prt.1)
+* [Download PTC Creo Part File (.prt.1)](../../sodesigna4.prt.1)
 
 ---
 
 ## Appendix (Motor Mount Inspiration & Links)
 
 * [omc-stepperonline.com - 24V DC Gear Motor Technical Drawings](https://www.omc-stepperonline.com/brushed-24v-dc-gear-motor-3-6kg-cm-46rpm-w-99-5-1-planetary-gearbox-pa28-28245800-g100)
-* [Aliexpress - NEMA 17 L-Bracket Motor Mount Reference](https://www.aliexpress.com/)
-* [DHgate - Steel Stepper Motor Mounting Bracket Reference](https://www.dhgate.com/)
+* [Aliexpress - NEMA 17 L-Bracket Motor Mount Reference](https://www.aliexpress.com/item/1005005721086783.html)
+* [DHgate - Steel Stepper Motor Mounting Bracket Reference](https://www.dhgate.com/product/steel-42-stepper-motor-mount-bracket-nema17/996764543.html)
 
 ---
 
@@ -117,4 +117,4 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 ### Lessons Learned & Challenges
 1. **Deflection Governs Design**: In both features, the thickness required for stiffness (h<sub>1</sub> = 10.70 mm, h<sub>2</sub> = 14.19 mm) was significantly larger than the strength requirement (8.87 mm and 9.49 mm). This proved that stiffness constraints (δ ≤ 0.30 mm) drive geometry for cantilever mounts much more than yield failure.
 2. **Creo Parametric Relations**: Linking sketch dimensions directly to parameters (`b1`, `h1`, `b2`, `h2`) ensured that any future design changes automatically regenerate the 3D model without breaking features.
-3. **Simple vs. Complex Aesthetics**: While raw blocky geometry satisfies structural math, adding side gussets significantly improves stress distribution and visual appearance.
+3. **Simple vs. Complex Aesthetics**: While raw blocky geometry satisfies structural math, adding interior fillets or side gussets significantly improves stress distribution and visual appearance.
