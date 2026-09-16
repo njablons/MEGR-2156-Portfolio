@@ -103,30 +103,3 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 ## Documentation & Lessons Learned
 * **Total Time Spent**: Approximately 4.5 hours from calculations to CAD modeling and drawing creation.
 * **Lessons Learned**: Calculating deflection for both features revealed that stiffness—rather than stress—governs the required wall thickness for 3D printed materials like PLATo fix the illegible formatting on your site, you need to add a space between the MathJax dollar signs (`$`) and surrounding punctuation, or wrap your inline math in standard Markdown code blocks or LaTeX syntax. 
-
-Currently, your page renders raw LaTeX code directly into the text (e.g., `($\sigma_y$)`, `($E$)`, `($N$)`) because the Markdown renderer is treating the LaTeX delimiters as plain text instead of processing them into formatted math equations.
-
-### Option 1: Fix LaTeX Spacing (Recommended)
-Ensure there is a space before and after inline math blocks so the parser recognizes them properly, or use standard HTML/Markdown entity formatting for simple variables:
-
-* **Instead of**: `Yield Strength ($\sigma_y$): $60\text{ MPa}$`
-* **Use**: `Yield Strength (σ_y): 60 MPa`
-
-### Option 2: Clean Up Simple Units & Variables
-For an engineering portfolio page, simple units and variables are much more readable without LaTeX formatting:
-
-* **Material**: PLA (Polylactic Acid)
-* **Yield Strength (σ_y)**: 60 MPa
-* **Elastic Modulus (E)**: 3.5 GPa (3500 MPa)
-* **Factor of Safety (N)**: 3
-* **Allowable Bending Stress (σ_allow)**: σ_allow = σ_y / N = 60 / 3 = 20 MPa
-
-### Option 3: Standardize Math Blocks
-If you want to keep LaTeX rendering enabled, place equations on their own lines wrapped in double dollar signs (`$$`) to ensure they render as block equations without bleeding into your paragraph text:
-
-```markdown
-$$ \sigma_{\text{allow}} = \frac{\sigma_y}{N} = \frac{60}{3} = 20 \text{ MPa} $$
-
-## Documentation & Lessons Learned
-* **Total Time Spent**: Approximately 4.5 hours from calculations to CAD modeling and drawing creation.
-* **Lessons Learned**: Calculating deflection for both features revealed that stiffness—rather than stress—governs the required wall thickness for 3D printed materials like PLA. Designing side gussets significantly reduces deflection without drastically increasing overall material volume.
