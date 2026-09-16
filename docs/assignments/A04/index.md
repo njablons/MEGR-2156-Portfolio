@@ -25,7 +25,8 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Free Body Diagram (FBD) & Calculations
 
-![Feature 1 Hand Calculations, Free Body Diagram, and Moment Derivation](IMG_4085.jpeg)
+![Feature 1 Hand Calculations, Free Body Diagram, and Moment Derivation](./IMG_4085.jpeg)
+
 *Figure 1: Hand calculations, FBD, and moment derivation for Feature 1 (Motor Attachment Plate).*
 
 ### Equations & Symbolic Solution
@@ -37,12 +38,8 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Numerical Solution
 
-* **Strength Design**:
-  $$h_1 = \sqrt{\frac{6 \cdot 300 \cdot 35}{40 \cdot 20}} = \sqrt{78.75} \approx 8.87\text{ mm}$$
-
-* **Stiffness/Deflection Design**:
-  $$h_1 = \sqrt[3]{\frac{4 \cdot 300 \cdot (35)^3}{3500 \cdot 40 \cdot 0.30}} = \sqrt[3]{1225} \approx 10.70\text{ mm}$$
-
+* **Strength Design**: $h_1 = \sqrt{\frac{6 \cdot 300 \cdot 35}{40 \cdot 20}} = \sqrt{78.75} \approx 8.87\text{ mm}$
+* **Stiffness/Deflection Design**: $h_1 = \sqrt[3]{\frac{4 \cdot 300 \cdot (35)^3}{3500 \cdot 40 \cdot 0.30}} = \sqrt[3]{1225} \approx 10.70\text{ mm}$
 * **Governing Dimension ($h_1$)**: **$10.70\text{ mm}$** (Deflection governs)
 
 ---
@@ -56,7 +53,8 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Free Body Diagram (FBD) & Calculations
 
-![Feature 2 Hand Calculations, Free Body Diagram, and Stress Derivation](IMG_4086.jpeg)
+![Feature 2 Hand Calculations, Free Body Diagram, and Stress Derivation](./IMG_4086.jpeg)
+
 *Figure 2: Hand calculations, FBD, and moment derivation for Feature 2 (Wall Mount Plate).*
 
 ### Equations & Symbolic Solution
@@ -67,26 +65,24 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Numerical Solution
 
-* **Strength Design**:
-  $$h_2 = \sqrt{\frac{6 \cdot 300 \cdot 50}{50 \cdot 20}} = \sqrt{90} \approx 9.49\text{ mm}$$
-
-* **Stiffness/Deflection Design**:
-  $$h_2 = \sqrt[3]{\frac{4 \cdot 300 \cdot (50)^3}{3500 \cdot 50 \cdot 0.30}} = \sqrt[3]{2857.14} \approx 14.19\text{ mm}$$
-
+* **Strength Design**: $h_2 = \sqrt{\frac{6 \cdot 300 \cdot 50}{50 \cdot 20}} = \sqrt{90} \approx 9.49\text{ mm}$
+* **Stiffness/Deflection Design**: $h_2 = \sqrt[3]{\frac{4 \cdot 300 \cdot (50)^3}{3500 \cdot 50 \cdot 0.30}} = \sqrt[3]{2857.14} \approx 14.19\text{ mm}$
 * **Governing Dimension ($h_2$)**: **$14.19\text{ mm}$** (Deflection governs)
 
 ---
 
 ## Sketch (Isometric View)
 
-![Hand-drawn Isometric Sketch of the Motor Mount Assembly](IMG_4087.jpeg)
+![Hand-drawn Isometric Sketch of the Motor Mount Assembly](./IMG_4087.jpeg)
+
 *Figure 3: Hand-drawn isometric sketch detailing dimensions and feature geometry.*
 
 ---
 
 ## CAD Model (Parametric)
 
-![3D Parametric CAD Model rendered in PTC Creo Parametric](Screenshot%202026-09-16%20141452.png)
+![3D Parametric CAD Model rendered in PTC Creo Parametric](./Screenshot%202026-09-16%20141452.png)
+
 *Figure 4: Parametric 3D CAD model in PTC Creo showing the motor clearance hole and wall mounting holes.*
 
 * **Parametric Control**: Driven via Creo Parameters and Relations linking calculated values $h_1 = 10.70\text{ mm}$ and $h_2 = 14.19\text{ mm}$.
@@ -96,7 +92,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## CAD File Downloads
 
-* [Download PTC Creo Part File (.prt.1)](sodesigna4.prt.1)
+* [Download PTC Creo Part File (.prt.1)](./sodesigna4.prt.1)
 
 ---
 
