@@ -75,19 +75,6 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ---
 
-## 2157 Engineering Drawing
-*(Insert Image 5: ASME standard 2D multiview technical drawing sheet)*
-
-* **Standard**: ASME 3rd Angle Projection
-* **Views Included**: Front View, Right Side View, Top View, and Isometric View (upper-right corner).
-* **Annotations & Features**:
-  * Title block containing: Name, Date, Part Name ("Motor Mount"), Scale (1:1), Material (PLA).
-  * Centerlines and center marks on all circular features.
-  * Hole Callout: **Ø3.4 mm clearance holes for M3 bolts**.
-  * Fully dimensioned for manufacturing without needing the 3D model.
-
----
-
 ## CAD File Downloads
 * [Download Motor Mount 3D Model File (STEP / SLDPRT)](https://github.com/njablons/MEGR-2156-Portfolio)
 * [Download Motor Mount Drawing (PDF)](https://github.com/njablons/MEGR-2156-Portfolio)
