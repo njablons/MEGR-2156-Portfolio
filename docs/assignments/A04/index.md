@@ -20,7 +20,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Knowns & Unknowns
 
-* **Knowns**: P = 300 N, L<sub>1</sub> = 35 mm, σ<sub>allow</sub> = 20 MPa, E = 3500 MPa, δ<sub>max</sub> = 0.30 mm, beam width b<sub>1</sub> = 40 mm.
+* **Knowns**: P = 300 N, L<sub>1</sub> = 35 mm, σ<sub>allow</sub> = 20 MPa, E = 3500 MPa, δ<sub>max</sub> = 0.30 mm, beam width b<sub>1</sub> = 50 mm.
 * **Unknowns**: Thickness h<sub>1</sub> based on stress, thickness h<sub>1</sub> based on deflection, final governing thickness h<sub>1</sub>.
 
 ### Free Body Diagram (FBD) & Calculations
@@ -38,9 +38,9 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Numerical Solution
 
-* **Strength Design**: h<sub>1</sub> = √( (6 · 300 · 35) / (40 · 20) ) = √78.75 ≈ **8.87 mm**
-* **Stiffness/Deflection Design**: h<sub>1</sub> = ∛( (4 · 300 · 35<sup>3</sup>) / (3500 · 40 · 0.30) ) = ∛1225 ≈ **10.70 mm**
-* **Governing Dimension (h<sub>1</sub>)**: **10.70 mm** (Deflection governs)
+* **Strength Design**: h<sub>1</sub> = √( (6 · 300 · 35) / (50 · 20) ) = √63 ≈ **7.94 mm**
+* **Stiffness/Deflection Design**: h<sub>1</sub> = ∛( (4 · 300 · 35<sup>3</sup>) / (3500 · 50 · 0.30) ) = ∛980 ≈ **9.93 mm**
+* **Governing Design Value (Model Parameter H1)**: **11.37 mm** (Deflection governs with added safety margin)
 
 ---
 
@@ -67,7 +67,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 * **Strength Design**: h<sub>2</sub> = √( (6 · 300 · 50) / (50 · 20) ) = √90 ≈ **9.49 mm**
 * **Stiffness/Deflection Design**: h<sub>2</sub> = ∛( (4 · 300 · 50<sup>3</sup>) / (3500 · 50 · 0.30) ) = ∛2857.14 ≈ **14.19 mm**
-* **Governing Dimension (h<sub>2</sub>)**: **14.19 mm** (Deflection governs)
+* **Governing Design Value (Model Parameter H2)**: **16.24 mm** (Deflection governs with added safety margin)
 
 ---
 
@@ -85,7 +85,11 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 *Figure 4: Parametric 3D CAD model in PTC Creo showing the motor clearance hole and wall mounting holes.*
 
-* **Parametric Control**: Driven via Creo Parameters and Relations linking calculated values h<sub>1</sub> = 10.70 mm and h<sub>2</sub> = 14.19 mm.
+![PTC Creo Parameters Table](Screenshot%202026-09-16%20160513.png)
+
+*Figure 5: PTC Creo Parameters window demonstrating full parametric integration (YS, E, L1, DMAX, P, SF, L2, H1, H2, B1, B2).*
+
+* **Parametric Control**: Driven via Creo Parameters and Relations linking user-defined variables (`H1 = 11.37 mm`, `H2 = 16.24 mm`, `B1 = 50.0 mm`, `B2 = 50.0 mm`).
 * **Clearance Features**: Standard Ø3.4 mm clearance holes for M3 wall/motor mounting bolts and a center clearance hole for the planetary gearbox shaft.
 
 ---
@@ -98,9 +102,9 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## Appendix (Motor Mount Inspiration & Links)
 
-* [omc-stepperonline.com - 24V DC Gear Motor Technical Drawings](https://www.omc-stepperonline.com/brushed-24v-dc-gear-motor-3-6kg-cm-46rpm-w-99-5-1-planetary-gearbox-pa28-28245800-g100)
-* [Aliexpress - NEMA 17 L-Bracket Motor Mount Reference](https://www.aliexpress.com/item/1005005721086783.html)
-* [DHgate - Steel Stepper Motor Mounting Bracket Reference](https://www.dhgate.com/product/steel-42-stepper-motor-mount-bracket-nema17/996764543.html)
+* [omc-stepperonline.com - 24V DC Gear Motor Technical Drawings](https://www.omc-stepperonline.com/)
+* [Aliexpress - NEMA 17 L-Bracket Motor Mount Reference](https://www.aliexpress.com/)
+* [DHgate - Steel Stepper Motor Mounting Bracket Reference](https://www.dhgate.com/)
 
 ---
 
@@ -115,6 +119,6 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
   * **Portfolio Markdown Page**: 30 mins formatting and linking files.
 
 ### Lessons Learned & Challenges
-1. **Deflection Governs Design**: In both features, the thickness required for stiffness (h<sub>1</sub> = 10.70 mm, h<sub>2</sub> = 14.19 mm) was significantly larger than the strength requirement (8.87 mm and 9.49 mm). This proved that stiffness constraints (δ ≤ 0.30 mm) drive geometry for cantilever mounts much more than yield failure.
-2. **Creo Parametric Relations**: Linking sketch dimensions directly to parameters (`b1`, `h1`, `b2`, `h2`) ensured that any future design changes automatically regenerate the 3D model without breaking features.
+1. **Deflection Governs Design**: In both features, the thickness required for stiffness (h<sub>1</sub> = 11.37 mm, h<sub>2</sub> = 16.24 mm) was significantly larger than the strength requirement (7.94 mm and 9.49 mm). This proved that stiffness constraints (δ ≤ 0.30 mm) drive geometry for cantilever mounts much more than yield failure.
+2. **Creo Parametric Relations**: Linking sketch dimensions directly to parameters (`B1`, `H1`, `B2`, `H2`) ensured that any future design changes automatically regenerate the 3D model without breaking features.
 3. **Simple vs. Complex Aesthetics**: While raw blocky geometry satisfies structural math, adding interior fillets or side gussets significantly improves stress distribution and visual appearance.
