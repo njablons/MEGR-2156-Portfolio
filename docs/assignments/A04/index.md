@@ -2,7 +2,7 @@
 
 ## Objective
 
-Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·cm / 46 RPM w/ 99.5:1 Planetary Gearbox) subjected to a load <b>P = 300 N</b> at the free end. The design evaluates both yield strength (with a safety factor <b>N = 3</b>) and deflection constraints (<b>δ<sub>max</sub> ≤ 0.30 mm</b>) using beam bending equations.
+Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·cm / 46 RPM w/ 99.5:1 Planetary Gearbox) subjected to a load **P = 300 N** at the free end. The design evaluates both yield strength (with a safety factor **N = 3**) and deflection constraints (**δ<sub>max</sub> ≤ 0.30 mm**) using beam bending equations.
 
 ---
 
@@ -25,7 +25,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Free Body Diagram (FBD) & Calculations
 
-<img src="../IMG_4085.jpeg" alt="Feature 1 Hand Calculations, Free Body Diagram, and Moment Derivation" width="100%">
+![Feature 1 Hand Calculations, Free Body Diagram, and Moment Derivation](IMG_4085.jpeg)
 
 *Figure 1: Hand calculations, FBD, and moment derivation for Feature 1 (Motor Attachment Plate).*
 
@@ -33,8 +33,8 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 * **Moment**: M<sub>1</sub> = P · L<sub>1</sub>
 * **Section Modulus**: Z<sub>1</sub> = (b<sub>1</sub> · h<sub>1</sub><sup>2</sup>) / 6
-* **Bending Stress Constraint**: σ = M<sub>1</sub> / Z<sub>1</sub> ≤ σ<sub>allow</sub>  ⇒  <b>h<sub>1</sub> ≥ √( (6 · P · L<sub>1</sub>) / (b<sub>1</sub> · σ<sub>allow</sub>) )</b>
-* **Deflection Constraint**: δ = (P · L<sub>1</sub><sup>3</sup>) / (3 · E · I<sub>1</sub>) ≤ δ<sub>max</sub>  ⇒  <b>h<sub>1</sub> ≥ ∛( (4 · P · L<sub>1</sub><sup>3</sup>) / (E · b<sub>1</sub> · δ<sub>max</sub>) )</b>
+* **Bending Stress Constraint**: σ = M<sub>1</sub> / Z<sub>1</sub> ≤ σ<sub>allow</sub>  ⇒  **h<sub>1</sub> ≥ √( (6 · P · L<sub>1</sub>) / (b<sub>1</sub> · σ<sub>allow</sub>) )**
+* **Deflection Constraint**: δ = (P · L<sub>1</sub><sup>3</sup>) / (3 · E · I<sub>1</sub>) ≤ δ<sub>max</sub>  ⇒  **h<sub>1</sub> ≥ ∛( (4 · P · L<sub>1</sub><sup>3</sup>) / (E · b<sub>1</sub> · δ<sub>max</sub>) )**
 
 ### Numerical Solution
 
@@ -53,15 +53,15 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ### Free Body Diagram (FBD) & Calculations
 
-<img src="../IMG_4086.jpeg" alt="Feature 2 Hand Calculations, Free Body Diagram, and Stress Derivation" width="100%">
+![Feature 2 Hand Calculations, Free Body Diagram, and Stress Derivation](IMG_4086.jpeg)
 
 *Figure 2: Hand calculations, FBD, and moment derivation for Feature 2 (Wall Mount Plate).*
 
 ### Equations & Symbolic Solution
 
 * **Moment**: M<sub>2</sub> = P · L<sub>2</sub>
-* **Bending Stress Constraint**: <b>h<sub>2</sub> ≥ √( (6 · P · L<sub>2</sub>) / (b<sub>2</sub> · σ<sub>allow</sub>) )</b>
-* **Deflection Constraint**: <b>h<sub>2</sub> ≥ ∛( (4 · P · L<sub>2</sub><sup>3</sup>) / (E · b<sub>2</sub> · δ<sub>max</sub>) )</b>
+* **Bending Stress Constraint**: **h<sub>2</sub> ≥ √( (6 · P · L<sub>2</sub>) / (b<sub>2</sub> · σ<sub>allow</sub>) )**
+* **Deflection Constraint**: **h<sub>2</sub> ≥ ∛( (4 · P · L<sub>2</sub><sup>3</sup>) / (E · b<sub>2</sub> · δ<sub>max</sub>) )**
 
 ### Numerical Solution
 
@@ -73,7 +73,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## Sketch (Isometric View)
 
-<img src="../IMG_4087.jpeg" alt="Hand-drawn Isometric Sketch of the Motor Mount Assembly" width="100%">
+![Hand-drawn Isometric Sketch of the Motor Mount Assembly](IMG_4087.jpeg)
 
 *Figure 3: Hand-drawn isometric sketch detailing dimensions and feature geometry.*
 
@@ -81,7 +81,7 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## CAD Model (Parametric)
 
-<img src="../Screenshot%202026-09-16%20141452.png" alt="3D Parametric CAD Model rendered in PTC Creo Parametric" width="100%">
+![3D Parametric CAD Model rendered in PTC Creo Parametric](Screenshot%202026-09-16%20141452.png)
 
 *Figure 4: Parametric 3D CAD model in PTC Creo showing the motor clearance hole and wall mounting holes.*
 
@@ -92,15 +92,15 @@ Design a motor mount attached to a rigid wall for a 24V DC Gear Motor (3.6 kg·c
 
 ## CAD File Downloads
 
-* [Download PTC Creo Part File (.prt.1)](../sodesigna4.prt.1)
+* [Download PTC Creo Part File (.prt.1)](sodesigna4.prt.1)
 
 ---
 
 ## Appendix (Motor Mount Inspiration & Links)
 
 * [omc-stepperonline.com - 24V DC Gear Motor Technical Drawings](https://www.omc-stepperonline.com/brushed-24v-dc-gear-motor-3-6kg-cm-46rpm-w-99-5-1-planetary-gearbox-pa28-28245800-g100)
-* [Aliexpress - NEMA 17 L-Bracket Motor Mount Reference](https://www.aliexpress.com/item/1005005721086783.html)
-* [DHgate - Steel Stepper Motor Mounting Bracket Reference](https://www.dhgate.com/product/steel-42-stepper-motor-mount-bracket-nema17/996764543.html)
+* [Aliexpress - NEMA 17 L-Bracket Motor Mount Reference](https://www.aliexpress.com/)
+* [DHgate - Steel Stepper Motor Mounting Bracket Reference](https://www.dhgate.com/)
 
 ---
 
