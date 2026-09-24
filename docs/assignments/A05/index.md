@@ -21,15 +21,9 @@ To design, analyze, and optimize a structural bracket supporting an applied load
 
 ### Hand Calculations & Multiview Sketches
 
-<div style="display: flex; flex-direction: column; gap: 20px; align-items: center; width: 100%;">
-  <img src="https://v3.camscanner.com/user/download?page=1" alt="Page 1 - Calculations" style="width: 100%; max-width: 800px; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="https://v3.camscanner.com/user/download?page=2" alt="Page 2 - Calculations" style="width: 100%; max-width: 800px; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="https://v3.camscanner.com/user/download?page=3" alt="Page 3 - Calculations" style="width: 100%; max-width: 800px; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="https://v3.camscanner.com/user/download?page=4" alt="Page 4 - Calculations" style="width: 100%; max-width: 800px; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="https://v3.camscanner.com/user/download?page=5" alt="Page 5 - Calculations" style="width: 100%; max-width: 800px; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="https://v3.camscanner.com/user/download?page=6" alt="Page 6 - Stress Multiview Sketch" style="width: 100%; max-width: 800px; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="https://v3.camscanner.com/user/download?page=7" alt="Page 7 - Stiffness Multiview Sketch" style="width: 100%; max-width: 800px; border: 1px solid #ccc; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</div>
+<object data="CamScanner 9-23-26 19.56.pdf" type="application/pdf" width="100%" height="900px">
+    <p>Your browser does not support inline PDF viewing. You can <a href="CamScanner 9-23-26 19.56.pdf">download the PDF document here</a> to view your calculations and sketches.</p>
+</object>
 
 ---
 
