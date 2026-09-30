@@ -8,7 +8,7 @@ The objective of this assignment is to generate a comprehensive 3D solid model a
 ## Design
 
 ### Step 1: Strength vs Stiffness
-Before creating any CAD models or drawings, I evaluated which analysis design from Assignment A05 would govern the final part geometry. I selected the stiffness-governed design because it provided more conservative section depths—specifically for Feature B ($h_B = 1.090\text{ in}$ vs $1.039\text{ in}$ for stress)—ensuring that maximum beam deflection remains strictly below the $0.005\text{ in}$ limit under the full load. Once confirmed, I configured the Creo software material to Aluminum 6061-T6 and set the working unit system to `in-lbf`.
+Before creating any CAD models or drawings, I evaluated which analysis design from Assignment A05 would govern the final part geometry. I selected the stiffness-governed design because it provided more conservative section depths, ensuring that maximum beam deflection remains strictly below the $0.005\text{ in}$ limit under the full load. Once confirmed, I configured the Creo software material to Aluminum 6061-T6 and set the working unit system to `in-lbf`.
 
 ![3D Model Isometric View](step1_model.png)
 
