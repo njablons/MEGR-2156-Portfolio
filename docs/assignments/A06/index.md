@@ -1,7 +1,7 @@
 # A6 – Bracket Design for Strength and Stiffness II
 
 ## Objective
-The objective of this assignment is to generate a comprehensive 3D solid model and a fully dimensioned multi-view engineering drawing in CAD representing the structural bracket designed in assignment A05. The design incorporates all features to ensure both strength and stiffness requirements are met under an applied load of 600 lbf ($P = 300\text{ lbf}$ per side) using Aluminum 6061-T6 with a safety factor of 4.0.
+The objective of this assignment is to generate a comprehensive 3D solid model and a fully dimensioned multi-view engineering drawing in CAD representing the structural bracket designed in assignment A05. The design incorporates all features to ensure both strength and stiffness requirements are met under an applied load of 600 lbf using Aluminum 6061-T6 with a safety factor of 4.0.
 
 ---
 
