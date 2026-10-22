@@ -1,4 +1,4 @@
-# Assignment 7: FEA Bracket Design Optimization
+# Assignment 17: FEA Bracket Design Optimization
 
 ## Overview
 The goal of this assignment is to perform finite element analysis (FEA) on a structural bracket using PTC Creo Simulate, iteratively refining the design through an inner-loop mesh convergence process and outer-loop structural modifications to meet safety factor and deflection requirements under a 600 lbf load.
