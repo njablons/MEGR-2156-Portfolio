@@ -59,4 +59,13 @@ This assignment required approximately 8 hours total. A majority of the time was
 
 Key engineering insights gained from this assignment include:
 - **Mesh Convergence Mechanics:** Refining the global element size increases computational fidelity near high-stress gradients. Achieving an inner-loop convergence threshold of ≤ 7% validates that numerical stress singularities are minimized and the FEA model has stabilized.
-- **Stress Concentration Mitigation:** Sharp re-entrant corners act as severe geometric stress ris
+- **Stress Concentration Mitigation:** Sharp re-entrant corners act as severe geometric stress risers. Introducing a simple 0.10 in transition fillet redistributed the load path, reducing maximum stress from 221.76 ksi to 165.74 ksi.
+- **Structural Topology Optimization:** Adding a structural support rib effectively transformed the bending moment at the neck into axial compression and tension across the rib, increasing the overall Safety Factor to 1.59 while maintaining a minimal mass penalty (+0.025 lbm).
+
+---
+
+## Downloadable Deliverables
+
+### CAD Files
+- [Download Design 1 (.zip)](a06bracketdesign.zip)
+  
