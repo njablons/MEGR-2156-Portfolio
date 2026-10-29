@@ -18,7 +18,7 @@ The input shaft transfers torque from the primary power source to the pinion gea
 * **Unknowns:** Input Torque (*T*<sub>in</sub>), Maximum Shear Stress (&tau;<sub>in</sub>), Safety Factor.
 * **Calculations:** 
   * *T*<sub>in</sub> = *T*<sub>out</sub> / *i* = 1.25 / 2.667 = 0.46875 in-lbf
-  * &tau;<sub>in</sub> = 16 *T*<sub>in</sub> / (&pi; *d*<sub>in</sub><sup>3</sup>) = 16(0.46875) / (&pi; &middot; 0.125<sup>3</sup>) &approx; 1,222.3 psi
+  * &tau;<sub>in</sub> = 16 *T*<sub>in</sub> / (&pi; &middot; *d*<sub>in</sub><sup>3</sup>) = 16(0.46875) / (&pi; &middot; 0.125<sup>3</sup>) &approx; 1,222.3 psi
 
 ![Input Shaft Calculations](IMG_4193.jpeg)
 *Figure 1: Handwritten Engineering Calculations for Input Shaft Stress*
@@ -39,7 +39,7 @@ The output shaft supports the driven output gear (*d*<sub>out</sub> = 0.250 in, 
   * Output Shaft Length (*L*) = 1.0 in
 * **Unknowns:** Maximum Shear Stress (&tau;<sub>out</sub>), Safety Factor.
 * **Calculations:** 
-  * &tau;<sub>out</sub> = 16 *T*<sub>out</sub> / (&pi; *d*<sub>out</sub><sup>3</sup>) = 16(1.25) / (&pi; &middot; 0.25<sup>3</sup>) &approx; 407.4 psi
+  * &tau;<sub>out</sub> = 16 *T*<sub>out</sub> / (&pi; &middot; *d*<sub>out</sub><sup>3</sup>) = 16(1.25) / (&pi; &middot; 0.25<sup>3</sup>) &approx; 407.4 psi
 
 ![Output Shaft Calculations](IMG_4194.jpeg)
 *Figure 3: Handwritten Engineering Calculations for Output Shaft Stress*
@@ -78,18 +78,31 @@ Wall thickness was verified to ensure adequate rigidity under press-fit mounting
 ---
 
 ## 3. Gearbox Housing Concept & Layout
-The gearbox housing consists of a two-part split design engineered for ease of manufacturing and assembly. 
+The gearbox housing consists of a two-part split design engineered for ease of manufacturing and assembly. The main housing body holds both sleeve bearings and provides an internal pocket clearing the 0.54" outer diameter 24-tooth gear. A top lid featuring a 0.8" × 0.8" locating plug secures the assembly cleanly without interfering with the internal power transmission components.
+
+![Housing Concept Sketch](IMG_4196.jpeg)
+*Figure 8: Housing Concept & Layout Sketch*
 
 ---
 
 ## 4. Parametric CAD Assembly & Solid Models
-Parametric 3D solid models were created in Creo Parametric to ensure proper spatial clearance and gear alignment.
+Parametric 3D solid models were created in Creo Parametric to ensure proper spatial clearance and gear alignment. The assembly was built sequentially starting with the base housing, inserting press-fit bearings, mounting the input/output shafts and spur gears, and fastening the top housing cover.
+
+![Housing Base and Top Halves](Screenshot 2026-10-28 195315.png)
+*Figure 9: CAD Solid Model of the Housing Base and Top Lid*
+
+![Assembled Gearbox Isometric View](Screenshot 2026-10-28 200434.png)
+*Figure 10: Complete Closed Gearbox CAD Assembly*
+
+![Internal Gearbox Cutaway View](Screenshot 2026-10-28 200534.png)
+*Figure 11: Internal View Showing Meshed Gears, Shafts, and Journal Bearings*
 
 ---
 
 ## 5. Lessons Learned
 - Accounting for full outer diameters of gears when designing housing clearance prevents interference during assembly.
 - Proper shaft extension lengths must be maintained beyond external housing faces for coupling access.
+- Split-housing designs must account for bearing alignment and draft angles during parametric modeling.
 
 ---
 
