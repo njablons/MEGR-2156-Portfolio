@@ -16,12 +16,14 @@ The input shaft transfers torque from the primary power source to the pinion gea
   * Input Shaft Diameter (*d*<sub>in</sub>) = 0.125 in
   * Input Shaft Length (*L*) = 1.0 in
 * **Unknowns:** Input Torque (*T*<sub>in</sub>), Maximum Shear Stress (&tau;<sub>in</sub>), Safety Factor.
+* **Free Body Diagram (FBD):**
+
+<img src="IMG_4193.jpeg" alt="Input Shaft Free Body Diagram and Calculations" width="100%">
+*Figure 1: Free Body Diagram and Handwritten Engineering Calculations for Input Shaft Stress*
+
 * **Calculations:** 
   * *T*<sub>in</sub> = *T*<sub>out</sub> / *i* = 1.25 / 2.667 = 0.46875 in-lbf
   * &tau;<sub>in</sub> = 16 *T*<sub>in</sub> / (&pi; &middot; *d*<sub>in</sub><sup>3</sup>) = 16(0.46875) / (&pi; &middot; 0.125<sup>3</sup>) &approx; 1,222.3 psi
-
-<img src="IMG_4193.jpeg" alt="Input Shaft Calculations" width="100%">
-*Figure 1: Handwritten Engineering Calculations for Input Shaft Stress*
 
 <img src="Screenshot 2026-10-28 191448.png" alt="Input Shaft CAD Model" width="100%">
 *Figure 2: Parametric Solid Model of the Input Shaft (0.125 in Diameter)*
@@ -38,11 +40,13 @@ The output shaft supports the driven output gear (*d*<sub>out</sub> = 0.250 in, 
   * Output Shaft Diameter (*d*<sub>out</sub>) = 0.250 in
   * Output Shaft Length (*L*) = 1.0 in
 * **Unknowns:** Maximum Shear Stress (&tau;<sub>out</sub>), Safety Factor.
+* **Free Body Diagram (FBD):**
+
+<img src="IMG_4194.jpeg" alt="Output Shaft Free Body Diagram and Calculations" width="100%">
+*Figure 3: Free Body Diagram and Handwritten Engineering Calculations for Output Shaft Stress*
+
 * **Calculations:** 
   * &tau;<sub>out</sub> = 16 *T*<sub>out</sub> / (&pi; &middot; *d*<sub>out</sub><sup>3</sup>) = 16(1.25) / (&pi; &middot; 0.25<sup>3</sup>) &approx; 407.4 psi
-
-<img src="IMG_4194.jpeg" alt="Output Shaft Calculations" width="100%">
-*Figure 3: Handwritten Engineering Calculations for Output Shaft Stress*
 
 <img src="Screenshot 2026-10-28 191455.png" alt="Output Shaft CAD Model" width="100%">
 *Figure 4: Parametric Solid Model of the Output Shaft (0.250 in Diameter)*
@@ -54,7 +58,7 @@ The output shaft supports the driven output gear (*d*<sub>out</sub> = 0.250 in, 
 ## 2. Design of Journal Bearings
 
 ### 2.a. Bearing Size, Pressure, Velocity, and PV Rating
-Journal bearings were sized to support the shafts while maintaining smooth rotational operation and minimal wear.
+Journal bearings were sized to support the shafts while maintaining smooth rotational operation and minimal wear under operating loads.
 
 * **Knowns:** Speed *N* = 1100 rpm, Shaft Diameters (0.125 in and 0.250 in), Radial Forces derived from gear pitch loads.
 * **Calculations:**
@@ -62,18 +66,21 @@ Journal bearings were sized to support the shafts while maintaining smooth rotat
   * **Surface Velocity (*V*):** *V* = (&pi; &middot; *d* &middot; *N*) / 12 (ft/min)
   * **PV Rating:** *PV* = *P* &times; *V*
 
-<img src="IMG_4198.jpeg" alt="McMaster-Carr Component Selection" width="100%">
-*Figure 5: McMaster-Carr Sleeve Journal Bearing Selection*
-
-* **Material Selection:** Bronze/Oil-Impregnated Alloy sleeve bearings selected based on low friction coefficient and high allowable PV continuous limits (*PV*<sub>allowable</sub> > 10,000 psi&middot;ft/min).
+<img src="IMG_4195.jpeg" alt="Journal Bearing Pressure, Velocity, and PV Sizing" width="100%">
+*Figure 5: Calculations for Journal Bearing Pressure, Velocity, and PV Ratings*
 
 ---
 
 ### 2.b. Journal Bearing Wall Thickness
-Wall thickness was verified to ensure adequate rigidity under press-fit mounting and radial gear loads.
+Wall thickness was verified using the press-fit and hoop stress equations to guarantee structural integrity of the housing wall during press-fit installation of the sleeve bearings.
 
-<img src="IMG_4195.jpeg" alt="Journal Bearing Pressure, Velocity, and PV Sizing" width="100%">
-*Figure 7: Calculations for Journal Bearing Pressure, Velocity, and PV Ratings*
+---
+
+### 2.c. McMaster-Carr Component Selection
+Bronze SAE 841 oil-impregnated sleeve journal bearings were chosen from McMaster-Carr based on low friction coefficients, high allowable continuous PV ratings (*PV*<sub>allowable</sub> > 10,000 psi&middot;ft/min), and press-fit tolerances.
+
+<img src="IMG_4198.jpeg" alt="McMaster-Carr Component Selection" width="100%">
+*Figure 7: McMaster-Carr Sleeve Journal Bearing Selection*
 
 ---
 
@@ -99,14 +106,16 @@ Parametric 3D solid models were created in Creo Parametric to ensure proper spat
 
 ---
 
-## 5. Lessons Learned
-- Accounting for full outer diameters of gears when designing housing clearance prevents interference during assembly.
-- Proper shaft extension lengths must be maintained beyond external housing faces for coupling access.
-- Split-housing designs must account for bearing alignment and draft angles during parametric modeling.
+## 5. Lessons Learned & Time Tracking
+* **Total Project Time:** 6.5 hours (Calculations: 1.5 hrs, CAD Modeling & Assembly: 3.5 hrs, Portfolio Documentation: 1.5 hrs).
+* **Lessons Learned:**
+  * Accounting for full outer diameters of gears when designing housing clearance prevents interference during assembly.
+  * Proper shaft extension lengths must be maintained beyond external housing faces for coupling access.
+  * Split-housing designs must account for bearing alignment and draft angles during parametric modeling.
 
 ---
 
 ## Downloadable Deliverables
 
 ### CAD Files
-- [Assembly.zip](files/Assembly.zip) – Complete ZIP package containing all CAD files (`.prt`, `.asm`, `.drw`), STEP exports (`.stp`), and 2D engineering drawings (`.pdf`).
+- [Download Assembly CAD Package (ZIP)](https://github.com/njablons/MEGR-2156-Portfolio/raw/main/docs/assignments/A08/gearbox_assembly.asm.1) – Complete package containing all CAD files (`.prt`, `.asm`, `.drw`), STEP exports (`.stp`), and 2D engineering drawings (`.pdf`).
