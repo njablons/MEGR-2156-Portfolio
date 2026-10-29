@@ -18,12 +18,12 @@ The input shaft transfers torque from the primary power source to the pinion gea
 * **Unknowns:** Input Torque (*T*<sub>in</sub>), Maximum Shear Stress (&tau;<sub>in</sub>), Safety Factor.
 * **Calculations:** 
   * *T*<sub>in</sub> = *T*<sub>out</sub> / *i* = 1.25 / 2.667 = 0.46875 in-lbf
-  * &tau;<sub>in</sub> = 16 *T*<sub>in</sub> / (&pi; *d*<sub>in</sub><sup>3</sup>) = 16(0.46875) / (&pi; * 0.125<sup>3</sup>) &approx; 1,222.3 psi
+  * &tau;<sub>in</sub> = 16 *T*<sub>in</sub> / (&pi; *d*<sub>in</sub><sup>3</sup>) = 16(0.46875) / (&pi; &middot; 0.125<sup>3</sup>) &approx; 1,222.3 psi
 
-![Input Shaft Calculations](images/input_shaft_calc.png)
+![Input Shaft Calculations](IMG_4193.jpeg)
 *Figure 1: Handwritten Engineering Calculations for Input Shaft Stress*
 
-![Input Shaft CAD Model](images/input_shaft_cad.png)
+![Input Shaft CAD Model](Screenshot 2026-10-28 191448.png)
 *Figure 2: Parametric Solid Model of the Input Shaft (0.125 in Diameter)*
 
 * **Verdict:** *Sufficient.* The calculated shear stress of 1,222.3 psi is well below the yield shear strength of standard steel shafting (&approx; 15,000 psi - 30,000 psi), providing a high safety factor against torsional yield.
@@ -39,12 +39,12 @@ The output shaft supports the driven output gear (*d*<sub>out</sub> = 0.250 in, 
   * Output Shaft Length (*L*) = 1.0 in
 * **Unknowns:** Maximum Shear Stress (&tau;<sub>out</sub>), Safety Factor.
 * **Calculations:** 
-  * &tau;<sub>out</sub> = 16 *T*<sub>out</sub> / (&pi; *d*<sub>out</sub><sup>3</sup>) = 16(1.25) / (&pi; * 0.25<sup>3</sup>) &approx; 407.4 psi
+  * &tau;<sub>out</sub> = 16 *T*<sub>out</sub> / (&pi; *d*<sub>out</sub><sup>3</sup>) = 16(1.25) / (&pi; &middot; 0.25<sup>3</sup>) &approx; 407.4 psi
 
-![Output Shaft Calculations](images/output_shaft_calc.png)
+![Output Shaft Calculations](IMG_4194.jpeg)
 *Figure 3: Handwritten Engineering Calculations for Output Shaft Stress*
 
-![Output Shaft CAD Model](images/output_shaft_cad.png)
+![Output Shaft CAD Model](Screenshot 2026-10-28 191455.png)
 *Figure 4: Parametric Solid Model of the Output Shaft (0.250 in Diameter)*
 
 * **Verdict:** *Sufficient.* The maximum shear stress of 407.4 psi is well within allowable material limits.
@@ -62,7 +62,7 @@ Journal bearings were sized to support the shafts while maintaining smooth rotat
   * **Surface Velocity (*V*):** *V* = (&pi; &middot; *d* &middot; *N*) / 12 (ft/min)
   * **PV Rating:** *PV* = *P* &times; *V*
 
-![McMaster-Carr Component Selection](images/mcmaster_bearing_selection.png)
+![McMaster-Carr Component Selection](IMG_4198.jpeg)
 *Figure 5: McMaster-Carr Sleeve Journal Bearing Selection*
 
 * **Material Selection:** Bronze/Oil-Impregnated Alloy sleeve bearings selected based on low friction coefficient and high allowable PV continuous limits (*PV*<sub>allowable</sub> > 10,000 psi&middot;ft/min).
@@ -72,7 +72,7 @@ Journal bearings were sized to support the shafts while maintaining smooth rotat
 ### 2.b. Journal Bearing Wall Thickness
 Wall thickness was verified to ensure adequate rigidity under press-fit mounting and radial gear loads.
 
-![Journal Bearing Pressure, Velocity, and PV Sizing](images/journal_bearing_calc.png)
+![Journal Bearing Pressure, Velocity, and PV Sizing](IMG_4195.jpeg)
 *Figure 7: Calculations for Journal Bearing Pressure, Velocity, and PV Ratings*
 
 ---
