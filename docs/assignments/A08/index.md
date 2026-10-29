@@ -20,10 +20,10 @@ The input shaft transfers torque from the primary power source to the pinion gea
   * *T*<sub>in</sub> = *T*<sub>out</sub> / *i* = 1.25 / 2.667 = 0.46875 in-lbf
   * &tau;<sub>in</sub> = 16 *T*<sub>in</sub> / (&pi; &middot; *d*<sub>in</sub><sup>3</sup>) = 16(0.46875) / (&pi; &middot; 0.125<sup>3</sup>) &approx; 1,222.3 psi
 
-![Input Shaft Calculations](IMG_4193.jpeg)
+<img src="IMG_4193.jpeg" alt="Input Shaft Calculations" width="100%">
 *Figure 1: Handwritten Engineering Calculations for Input Shaft Stress*
 
-![Input Shaft CAD Model](Screenshot 2026-10-28 191448.png)
+<img src="Screenshot 2026-10-28 191448.png" alt="Input Shaft CAD Model" width="100%">
 *Figure 2: Parametric Solid Model of the Input Shaft (0.125 in Diameter)*
 
 * **Verdict:** *Sufficient.* The calculated shear stress of 1,222.3 psi is well below the yield shear strength of standard steel shafting (&approx; 15,000 psi - 30,000 psi), providing a high safety factor against torsional yield.
@@ -41,10 +41,10 @@ The output shaft supports the driven output gear (*d*<sub>out</sub> = 0.250 in, 
 * **Calculations:** 
   * &tau;<sub>out</sub> = 16 *T*<sub>out</sub> / (&pi; &middot; *d*<sub>out</sub><sup>3</sup>) = 16(1.25) / (&pi; &middot; 0.25<sup>3</sup>) &approx; 407.4 psi
 
-![Output Shaft Calculations](IMG_4194.jpeg)
+<img src="IMG_4194.jpeg" alt="Output Shaft Calculations" width="100%">
 *Figure 3: Handwritten Engineering Calculations for Output Shaft Stress*
 
-![Output Shaft CAD Model](Screenshot 2026-10-28 191455.png)
+<img src="Screenshot 2026-10-28 191455.png" alt="Output Shaft CAD Model" width="100%">
 *Figure 4: Parametric Solid Model of the Output Shaft (0.250 in Diameter)*
 
 * **Verdict:** *Sufficient.* The maximum shear stress of 407.4 psi is well within allowable material limits.
@@ -62,7 +62,7 @@ Journal bearings were sized to support the shafts while maintaining smooth rotat
   * **Surface Velocity (*V*):** *V* = (&pi; &middot; *d* &middot; *N*) / 12 (ft/min)
   * **PV Rating:** *PV* = *P* &times; *V*
 
-![McMaster-Carr Component Selection](IMG_4198.jpeg)
+<img src="IMG_4198.jpeg" alt="McMaster-Carr Component Selection" width="100%">
 *Figure 5: McMaster-Carr Sleeve Journal Bearing Selection*
 
 * **Material Selection:** Bronze/Oil-Impregnated Alloy sleeve bearings selected based on low friction coefficient and high allowable PV continuous limits (*PV*<sub>allowable</sub> > 10,000 psi&middot;ft/min).
@@ -72,7 +72,7 @@ Journal bearings were sized to support the shafts while maintaining smooth rotat
 ### 2.b. Journal Bearing Wall Thickness
 Wall thickness was verified to ensure adequate rigidity under press-fit mounting and radial gear loads.
 
-![Journal Bearing Pressure, Velocity, and PV Sizing](IMG_4195.jpeg)
+<img src="IMG_4195.jpeg" alt="Journal Bearing Pressure, Velocity, and PV Sizing" width="100%">
 *Figure 7: Calculations for Journal Bearing Pressure, Velocity, and PV Ratings*
 
 ---
@@ -80,7 +80,7 @@ Wall thickness was verified to ensure adequate rigidity under press-fit mounting
 ## 3. Gearbox Housing Concept & Layout
 The gearbox housing consists of a two-part split design engineered for ease of manufacturing and assembly. The main housing body holds both sleeve bearings and provides an internal pocket clearing the 0.54" outer diameter 24-tooth gear. A top lid featuring a 0.8" × 0.8" locating plug secures the assembly cleanly without interfering with the internal power transmission components.
 
-![Housing Concept Sketch](IMG_4196.jpeg)
+<img src="IMG_4196.jpeg" alt="Housing Concept Sketch" width="100%">
 *Figure 8: Housing Concept & Layout Sketch*
 
 ---
@@ -88,13 +88,13 @@ The gearbox housing consists of a two-part split design engineered for ease of m
 ## 4. Parametric CAD Assembly & Solid Models
 Parametric 3D solid models were created in Creo Parametric to ensure proper spatial clearance and gear alignment. The assembly was built sequentially starting with the base housing, inserting press-fit bearings, mounting the input/output shafts and spur gears, and fastening the top housing cover.
 
-![Housing Base and Top Halves](Screenshot 2026-10-28 195315.png)
+<img src="Screenshot 2026-10-28 195315.png" alt="Housing Base and Top Halves" width="100%">
 *Figure 9: CAD Solid Model of the Housing Base and Top Lid*
 
-![Assembled Gearbox Isometric View](Screenshot 2026-10-28 200434.png)
+<img src="Screenshot 2026-10-28 200434.png" alt="Assembled Gearbox Isometric View" width="100%">
 *Figure 10: Complete Closed Gearbox CAD Assembly*
 
-![Internal Gearbox Cutaway View](Screenshot 2026-10-28 200534.png)
+<img src="Screenshot 2026-10-28 200534.png" alt="Internal Gearbox Cutaway View" width="100%">
 *Figure 11: Internal View Showing Meshed Gears, Shafts, and Journal Bearings*
 
 ---
