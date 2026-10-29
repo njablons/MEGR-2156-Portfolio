@@ -8,46 +8,46 @@ The goal of this assignment is to perform comprehensive mechanical design, stres
 ## 1. Design of the Shafts
 
 ### 1.a. Input Shaft (Power-Transmission)
-The input shaft transfers torque from the primary power source to the pinion gear ($d_{in} = 0.125\text{ in}$, $L_{in} = 1.0\text{ in}$).
+The input shaft transfers torque from the primary power source to the pinion gear (*d*<sub>in</sub> = 0.125 in, *L*<sub>in</sub> = 1.0 in).
 
-* **Knowns:** 
-  * Output Torque ($T_{out}$) = $1.25\text{ in}\cdot\text{lb}_f$
-  * Gear Ratio ($i$) = $24 : 9 = 2.667$
-  * Input Shaft Diameter ($d_{in}$) = $0.125\text{ in}$
-  * Input Shaft Length ($L$) = $1.0\text{ in}$
-* **Unknowns:** Input Torque ($T_{in}$), Maximum Shear Stress ($\tau_{in}$), Safety Factor.
-* **Calculations:**
-  $$T_{in} = \frac{T_{out}}{i} = \frac{1.25}{2.667} = 0.46875\text{ in}\cdot\text{lb}_f$$
-  $$\tau_{in} = \frac{16 T_{in}}{\pi d_{in}^3} = \frac{16 (0.46875)}{\pi (0.125)^3} \approx 1,222.3\text{ psi}$$
+* **Knowns:**
+  * Output Torque (*T*<sub>out</sub>) = 1.25 in-lbf
+  * Gear Ratio (*i*) = 24 : 9 = 2.667
+  * Input Shaft Diameter (*d*<sub>in</sub>) = 0.125 in
+  * Input Shaft Length (*L*) = 1.0 in
+* **Unknowns:** Input Torque (*T*<sub>in</sub>), Maximum Shear Stress (&tau;<sub>in</sub>), Safety Factor.
+* **Calculations:** 
+  * *T*<sub>in</sub> = *T*<sub>out</sub> / *i* = 1.25 / 2.667 = 0.46875 in-lbf
+  * &tau;<sub>in</sub> = 16 *T*<sub>in</sub> / (&pi; *d*<sub>in</sub><sup>3</sup>) = 16(0.46875) / (&pi; * 0.125<sup>3</sup>) &approx; 1,222.3 psi
 
-![Input Shaft Calculations](IMG_4193.jpeg)
+![Input Shaft Calculations](images/input_shaft_calc.png)
 *Figure 1: Handwritten Engineering Calculations for Input Shaft Stress*
 
-![Input Shaft CAD Model](Screenshot%202026-10-28%20191448.png)
-*Figure 2: Parametric Solid Model of the Input Shaft ($0.125\text{ in}$ Diameter)*
+![Input Shaft CAD Model](images/input_shaft_cad.png)
+*Figure 2: Parametric Solid Model of the Input Shaft (0.125 in Diameter)*
 
-* **Verdict:** **Sufficient.** The calculated shear stress of $1,222.3\text{ psi}$ is well below the yield shear strength of standard steel shafting ($\approx 15,000\text{ psi} - 30,000\text{ psi}$), providing a high safety factor against torsional yield.
+* **Verdict:** *Sufficient.* The calculated shear stress of 1,222.3 psi is well below the yield shear strength of standard steel shafting (&approx; 15,000 psi - 30,000 psi), providing a high safety factor against torsional yield.
 
 ---
 
 ### 1.b. Output Shaft (Short Shaft)
-The output shaft supports the driven output gear ($d_{out} = 0.250\text{ in}$, $L_{out} = 1.0\text{ in}$).
+The output shaft supports the driven output gear (*d*<sub>out</sub> = 0.250 in, *L*<sub>out</sub> = 1.0 in).
 
 * **Knowns:**
-  * Output Torque ($T_{out}$) = $1.25\text{ in}\cdot\text{lb}_f$
-  * Output Shaft Diameter ($d_{out}$) = $0.250\text{ in}$
-  * Output Shaft Length ($L$) = $1.0\text{ in}$
-* **Unknowns:** Maximum Shear Stress ($\tau_{out}$), Safety Factor.
-* **Calculations:**
-  $$\tau_{out} = \frac{16 T_{out}}{\pi d_{out}^3} = \frac{16 (1.25)}{\pi (0.25)^3} \approx 407.4\text{ psi}$$
+  * Output Torque (*T*<sub>out</sub>) = 1.25 in-lbf
+  * Output Shaft Diameter (*d*<sub>out</sub>) = 0.250 in
+  * Output Shaft Length (*L*) = 1.0 in
+* **Unknowns:** Maximum Shear Stress (&tau;<sub>out</sub>), Safety Factor.
+* **Calculations:** 
+  * &tau;<sub>out</sub> = 16 *T*<sub>out</sub> / (&pi; *d*<sub>out</sub><sup>3</sup>) = 16(1.25) / (&pi; * 0.25<sup>3</sup>) &approx; 407.4 psi
 
-![Output Shaft Calculations](IMG_4194.jpeg)
+![Output Shaft Calculations](images/output_shaft_calc.png)
 *Figure 3: Handwritten Engineering Calculations for Output Shaft Stress*
 
-![Output Shaft CAD Model](Screenshot%202026-10-28%20191455.png)
-*Figure 4: Parametric Solid Model of the Output Shaft ($0.250\text{ in}$ Diameter)*
+![Output Shaft CAD Model](images/output_shaft_cad.png)
+*Figure 4: Parametric Solid Model of the Output Shaft (0.250 in Diameter)*
 
-* **Verdict:** **Sufficient.** The maximum shear stress of $407.4\text{ psi}$ is well within allowable material limits.
+* **Verdict:** *Sufficient.* The maximum shear stress of 407.4 psi is well within allowable material limits.
 
 ---
 
@@ -56,71 +56,44 @@ The output shaft supports the driven output gear ($d_{out} = 0.250\text{ in}$, $
 ### 2.a. Bearing Size, Pressure, Velocity, and PV Rating
 Journal bearings were sized to support the shafts while maintaining smooth rotational operation and minimal wear.
 
-* **Knowns:** Speed $N = 1100\text{ rpm}$, Shaft Diameters ($0.125\text{ in}$ and $0.250\text{ in}$), Radial Forces derived from gear pitch loads.
+* **Knowns:** Speed *N* = 1100 rpm, Shaft Diameters (0.125 in and 0.250 in), Radial Forces derived from gear pitch loads.
 * **Calculations:**
-  * **Bearing Pressure ($P$):** $P = \frac{F_{radial}}{d \cdot L_{bearing}}$
-  * **Surface Velocity ($V$):** $V = \frac{\pi \cdot d \cdot N}{12}\text{ (ft/min)}$
-  * **PV Rating:** $PV = P \times V$
+  * **Bearing Pressure (*P*):** *P* = *F*<sub>radial</sub> / (*d* &middot; *L*<sub>bearing</sub>)
+  * **Surface Velocity (*V*):** *V* = (&pi; &middot; *d* &middot; *N*) / 12 (ft/min)
+  * **PV Rating:** *PV* = *P* &times; *V*
 
-![Journal Bearing Pressure, Velocity, and PV Sizing](IMG_4195.jpeg)
-*Figure 5: Calculations for Journal Bearing Pressure, Velocity, and PV Ratings*
+![McMaster-Carr Component Selection](images/mcmaster_bearing_selection.png)
+*Figure 5: McMaster-Carr Sleeve Journal Bearing Selection*
 
-* **Material Selection:** Bronze/Oil-Impregnated Alloy sleeve bearings selected based on low friction coefficient and high allowable PV continuous limits ($PV_{\text{allowable}} > 10,000\text{ psi}\cdot\text{ft/min}$).
+* **Material Selection:** Bronze/Oil-Impregnated Alloy sleeve bearings selected based on low friction coefficient and high allowable PV continuous limits (*PV*<sub>allowable</sub> > 10,000 psi&middot;ft/min).
 
 ---
 
 ### 2.b. Journal Bearing Wall Thickness
-Wall thickness was evaluated to ensure structural rigidity and proper press-fit tolerance within the 2.0" × 2.0" × 1.0" housing.
+Wall thickness was verified to ensure adequate rigidity under press-fit mounting and radial gear loads.
 
-![Journal Bearing Thickness Analysis](IMG_4198.jpeg)
-*Figure 6: Free Body Diagram and Equations for Journal Bearing Wall Thickness*
-
----
-
-### 2.c. McMaster-Carr Component Selection
-* **Pinion Spur Gear:** [McMaster-Carr 7880K19](https://www.mcmaster.com/catalog/129/1330/7880K19)
-* **Output Spur Gear:** [McMaster-Carr 7880K24](https://www.mcmaster.com/catalog/129/1330/7880K24)
-* **Sleeve Bearings:** [McMaster-Carr Plain Journal Bearings](https://www.mcmaster.com/products/journal-bearings/sleeve-bearings-3~/)
+![Journal Bearing Pressure, Velocity, and PV Sizing](images/journal_bearing_calc.png)
+*Figure 7: Calculations for Journal Bearing Pressure, Velocity, and PV Ratings*
 
 ---
 
 ## 3. Gearbox Housing Concept & Layout
-
-The housing consists of a two-part split assembly measuring **2.0 in × 2.0 in × 1.0 in**. 
-* **Center Distance:** The shaft center-to-center distance was defined at **0.6875 in** to match the pitch radii sum of the 24T and 9T meshing spur gears, ensuring smooth tooth engagement without binding.
-* **Fastening:** The top lid and bottom base fit together securely using recessed mounting fasteners and alignment pins.
-
-![Gearbox Orthographic & Sectional Views](IMG_4196.jpeg)
-*Figure 7: Hand Sketches and Layout Views of the Two-Component Housing Assembly*
+The gearbox housing consists of a two-part split design engineered for ease of manufacturing and assembly. 
 
 ---
 
 ## 4. Parametric CAD Assembly & Solid Models
-
-The complete assembly was generated parametrically in Creo Parametric to ensure all clearances and fits adhere to standard running/sliding fit tolerances.
-
-![Shafts Mounted in Housing Base](Screenshot%202026-10-28%20195315.png)
-*Figure 8: Isometric View of Input and Output Shafts Mounted in the 2.0" × 2.0" × 1.0" Housing Base*
-
-![Top View of Open Gearbox showing Gear Mesh](Screenshot%202026-10-28%20200434.png)
-*Figure 9: Top View showing Gear Mesh Alignment at the 0.6875 in Center-to-Center Spacing*
-
-![Fully Enclosed Gearbox Assembly](Screenshot%202026-10-28%20200534.png)
-*Figure 10: Fully Assembled 2-Part Gearbox Housing with Lid Attached*
+Parametric 3D solid models were created in Creo Parametric to ensure proper spatial clearance and gear alignment.
 
 ---
 
 ## 5. Lessons Learned
-
-This assignment required approximately **7 hours** total from initial calculations to final CAD assembly and portfolio rendering. Key engineering insights gained include:
-
-* **Pitch Center Spacing Mechanics:** Setting the precise $0.6875\text{ in}$ center-to-center distance was critical. Even slight deviations in spacing cause either binding due to insufficient backlash or premature tooth wear from loose mesh alignment.
-* **Parametric Housing Sizing:** Optimizing the outer housing envelope down to $2.0\text{ in} \times 2.0\text{ in} \times 1.0\text{ in}$ reduced overall material volume while maintaining required clearance for the rotating output gear hub and sleeve bearings.
-* **Torsional Shear Stress Limits:** Performing torsional stress analysis verified that standard $0.125\text{ in}$ and $0.250\text{ in}$ shafting operate well below yield thresholds under a $1.25\text{ in}\cdot\text{lb}_f$ torque load.
+- Accounting for full outer diameters of gears when designing housing clearance prevents interference during assembly.
+- Proper shaft extension lengths must be maintained beyond external housing faces for coupling access.
 
 ---
 
 ## Downloadable Deliverables
 
 ### CAD Files
-- [Download Gearbox Assembly (.asm)](gearbox_assembly.asm.1)
+- [Assembly.zip](files/Assembly.zip) – Complete ZIP package containing all CAD files (`.prt`, `.asm`, `.drw`), STEP exports (`.stp`), and 2D engineering drawings (`.pdf`).
