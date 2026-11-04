@@ -43,6 +43,8 @@ Designed a two-pulley power transmission system transferring rotational power be
 * **Specifications:** Polyurethane Rubber Round Belt, 1/4" Diameter, 19-1/2" Outer Circumference
 * **Engineering Justification:** The theoretical pitch length calculated is $L = 19.425\text{ in}$ with a minimum required cross-sectional diameter of $d_{\text{belt}} = 0.2416\text{ in}$. [McMaster-Carr Part #3044K606](https://www.mcmaster.com/products/round-belts/diameter~1-4-1/outer-circumference~19-1-2/) ($1/4\text{ in}$ nominal diameter, polyurethane rubber, 19-1/2" outer circumference) satisfies both the stress limits and length geometry while matching the polyurethane material specified in the prompt.
 
+![Belt Selection Work](IMG_4203.jpeg)
+
 ---
 
 ## Shaft Design
@@ -69,6 +71,8 @@ Designed a two-pulley power transmission system transferring rotational power be
   $$d_s = \left( \frac{16 \times 6.588\text{ in-lbf}}{\pi \times 17,310\text{ psi}} \right)^{\frac{1}{3}} = (0.001939)^{\frac{1}{3}} = 0.1247\text{ in}$$
 
 **Selected Shaft Size:** Standard $1/8\text{ in}$ nominal ($0.125\text{ in}$) precision ground 1060 hardened steel shafting.
+
+![Shaft Design Work](IMG_4204.jpeg)
 
 ---
 
@@ -99,6 +103,8 @@ Designed a two-pulley power transmission system transferring rotational power be
 * **Selected Material:** **Porous Bronze (Sintered)**
 * **Justification:** Based on Table 4 (pg. 2440) in *Machinery's Handbook*, oil-impregnated **Porous Bronze** provides a maximum allowable $PV$ capacity of $50,000\text{ psi-ft/min}$, a maximum static load rating of $2,000\text{ psi}$, and a maximum continuous surface speed of $1,200\text{ fpm}$. Our calculated operating parameters ($P = 159.1\text{ psi}$, $V = 49.4\text{ fpm}$, $PV = 7,855\text{ psi-ft/min}$) fall well within these allowable limits.
 
+![Journal Bearing Work](IMG_4205.jpeg)
+
 ---
 
 ## Frame Design
@@ -118,6 +124,8 @@ Designed a two-pulley power transmission system transferring rotational power be
 * **Retention Walls / Guide Rails:**
   * Raised $0.125\text{ in}$ flange walls run continuously along the perimeter to guide the round belt, preventing lateral tracking and axial dislodgement off the pulleys during dynamic 1500 RPM operation.
 
+![Frame Design Work](IMG_4206.jpeg)
+
 ---
 
 ## Lessons Learned
@@ -126,3 +134,9 @@ Designed a two-pulley power transmission system transferring rotational power be
 * **Distortion Energy Application in Shaft Design:** I learned how to apply Distortion Energy Theory ($S_{sy} = 0.577 S_y$) to convert pure tensile yield strength into allowable shear stress when calculating minimum shaft diameters under pure torsional load.
 * **$PV$ Rating Evaluation for Journal Bearings:** I learned how to evaluate combined pressure ($P$) and velocity ($V$) parameters against standard industry tables in *Machinery's Handbook* (Table 4) to verify oil-impregnated porous metal sleeve longevity.
 * **Constraint Integration in Chassis Design:** I learned how physical operational hazards require integrated structural features, such as perimeter retaining rails on chassis walls, to prevent lateral belt walk under dynamic vibration.
+
+---
+
+## Downloadable Work PDF File
+
+* [Download Handwritten Work PDF (IMG_4203 - IMG_4206)](IMG_4206.jpeg)
